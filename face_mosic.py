@@ -27,7 +27,7 @@ while True:
     
     #カスケードを使って顔を認識するリスト(座標)を返す
     img_gray = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
-    face_list = cascade.detectMultiScale(img_gray,minSize=(100,100))
+    face_list = cascade.detectMultiScale(img_gray,minSize=(50,50))
     
 
     for (x,y,w,h) in face_list:
