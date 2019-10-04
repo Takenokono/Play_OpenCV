@@ -12,3 +12,6 @@
 
 ## 3.face_gaussianBlur.py
 　顔の部分に、ガウシアンフィルターによる平滑化を行います。
+
+## 4.BinaryWorld.py
+　得た画像を2値化します。
