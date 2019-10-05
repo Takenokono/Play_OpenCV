@@ -12,7 +12,7 @@ while True:
     #ガウシアンフィルターで平滑化
     frame = cv2.GaussianBlur(frame,(7,7),0)
     #画像の2値化
-    frame = cv2.threshold(frame,140,240,cv2.THRESH_BINARY_INV)[1]
+    frame = cv2.threshold(frame,120,240,cv2.THRESH_BINARY_INV)[1]
 
     
     cv2.imshow('OpenCV Camera', frame)
