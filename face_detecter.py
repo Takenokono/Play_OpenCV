@@ -1,5 +1,5 @@
 import cv2
-import matplotlib.pyplot as plt 
+
 
 #カスケードの読み込み(from github/opencv/data)
 cascade_file = './Cascade/haarcascade_frontalface_alt.xml'
