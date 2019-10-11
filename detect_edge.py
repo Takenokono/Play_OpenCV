@@ -5,11 +5,15 @@ cap = cv2.VideoCapture(0)
 while True:
     #画像として読み込み
     _,frame = cap.read()
-    
-    
-    
-    frame = cv2.Canny(frame,100,200)
+
+    edge_img = cv2.Canny(frame,100,200)
+
+    size = (600,400)
+    frame = cv2.resize(frame,size)
+    edge_img = cv2.resize(edge_img,size)
+
     cv2.imshow('OpenCV Camera', frame)
+    cv2.imshow('Edge_ver.',edge_img)
 
     #終了受付
     k = cv2.waitKey(1)
